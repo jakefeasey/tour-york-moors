@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+
+  web:
+    image: nginx
+    ports:
+      - 80:80
+    volumes:
+      - ./html:/var/www/touryorkmoors.co.uk
+      - ./touryorkmoors.co.uk.conf:/etc/nginx/conf.d/site.conf
